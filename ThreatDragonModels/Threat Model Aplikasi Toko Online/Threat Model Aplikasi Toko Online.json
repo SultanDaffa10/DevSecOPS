@@ -1,0 +1,45 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-09-23",
+  "summary": {
+    "title": "Threat Model Aplikasi Toko Online",
+    "owner": "Kelompok Royal",
+    "description": "Aplikasi toko online digunakan oleh customer untuk melakukan registrasi, login, melihat produk, membuat pesanan, dan melakukan pembayaran.\nAdmin menggunakan sistem untuk mengelola data produk dan pesanan. Aplikasi menggunakan React sebagai frontend, Node.js REST API sebagai backend,\nMySQL sebagai database, Redis sebagai cache, dan layanan email untuk mengirimkan notifikasi kepada pengguna. Pembayaran dilakukan melalui payment gateway seperti Midtrans atau Xendit.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Daffa"
+      },
+      {
+        "name": "Ridho"
+      },
+      {
+        "name": "Farras"
+      },
+      {
+        "name": "Aziz"
+      },
+      {
+        "name": "Damar"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "DFD Toko Online",
+        "diagramType": "STRIDE",
+        "placeholder": "Deskripsi diagram STRIDE baru",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Data Flow Diagram aplikasi toko online yang menggambarkan alur data antara Customer, Admin, Frontend, Backend, Database, Redis, Email Service, dan Payment Gateway."
+      }
+    ],
+    "diagramTop": 4,
+    "reviewer": "April Rustianto, S. Komp., M.T., CCIE",
+    "threatTop": 0
+  }
+}
