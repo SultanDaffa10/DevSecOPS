@@ -59,7 +59,9 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "bd011b63-10f7-42a3-a8fc-b2210ee52345"
+              ],
               "containedElements": [
                 "3a187dfc-0c33-407b-b30f-74d9a27219c4"
               ]
@@ -92,7 +94,7 @@
               "crossingFlows": [
                 "c68c60c3-f29c-450a-8f8d-bbb004277cc8",
                 "4b7a91c7-e816-43d8-bffb-7ac14d40365d",
-                "4edd0060-cd67-46e5-9402-51283ac4e443"
+                "bd011b63-10f7-42a3-a8fc-b2210ee52345"
               ],
               "containedElements": [
                 "664ea030-679d-497d-ac1a-2f565bbdd4fa",
@@ -446,8 +448,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -463,81 +464,29 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTPS Login",
+              "name": "HTTPS login",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "67fff141-c72a-41e9-ad2d-271f492ef64c",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 1,
-                  "score": ""
-                },
-                {
-                  "id": "aeb66289-11b6-4d27-9c72-764c8dae4d52",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 2,
-                  "score": ""
-                },
-                {
-                  "id": "fe8feaf7-b866-4567-8ac0-e8cee945e4c9",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 3,
-                  "score": ""
-                },
-                {
-                  "id": "8b096802-d200-4656-8e48-5b9b533ec3f1",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 4,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": [
+                "ed8d43c6-f08c-4ded-b587-1709d07b3a38",
                 "ce48c1c1-a67c-46ef-a702-65eaa807fdf3"
               ]
             },
             "labels": [
-              "HTTPS Login"
+              "HTTPS login"
             ],
-            "id": "4edd0060-cd67-46e5-9402-51283ac4e443",
+            "id": "bd011b63-10f7-42a3-a8fc-b2210ee52345",
             "source": {
-              "x": 70,
-              "y": -35
+              "cell": "3a187dfc-0c33-407b-b30f-74d9a27219c4",
+              "port": "fcb6f65b-57bd-4ba7-98ba-62d3bec83049"
             },
             "target": {
               "cell": "7b658490-a760-4d9b-b1e7-41768bf1408d",
@@ -558,8 +507,8 @@
                 "text": "User Browser"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -656,9 +605,47 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "92b0688e-613f-43eb-9475-0bb64fbfec41",
+                  "title": "Pencurian Kredensial Pengguna",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat menggunakan username dan password pengguna yang dicuri untuk menyamar sebagai pengguna yang sah dan memperoleh akses ke akun toko online.",
+                  "mitigation": "Gunakan Multi-Factor Authentication (MFA), simpan password menggunakan password hashing yang kuat, dan gunakan session atau token dengan masa berlaku terbatas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "d47ad61d-2990-403a-a71e-16698b183b92",
+                  "title": "Penyangkalan Aktivitas Pengguna",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna dapat menyangkal bahwa dirinya pernah melakukan aktivitas tertentu seperti login atau membuat pesanan apabila sistem tidak memiliki pencatatan aktivitas yang memadai.",
+                  "mitigation": "Terapkan audit logging yang mencatat user ID, waktu, aktivitas, alamat IP, dan ID transaksi untuk aktivitas penting pengguna.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1512,6 +1499,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "April Rustianto, S. Komp., M.T., CCIE",
-    "threatTop": 4
+    "threatTop": 9
   }
 }
